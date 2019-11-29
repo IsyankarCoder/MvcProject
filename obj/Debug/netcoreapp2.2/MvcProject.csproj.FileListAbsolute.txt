@@ -29,3 +29,4 @@ d:\VsCode\MvcProject\obj\Debug\netcoreapp2.2\MvcProject.dll
 d:\VsCode\MvcProject\obj\Debug\netcoreapp2.2\MvcProject.pdb
 D:\VsCode\MvcProject\obj\Debug\netcoreapp2.2\MvcProject.csproj.CopyComplete
 d:\VsCode\MvcProject\obj\Debug\netcoreapp2.2\Razor\Views\HelloWorld\Index.g.cshtml.cs
+d:\VsCode\MvcProject\obj\Debug\netcoreapp2.2\Razor\Views\Pager\Index.g.cshtml.cs
