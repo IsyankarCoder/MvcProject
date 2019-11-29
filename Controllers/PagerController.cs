@@ -31,6 +31,7 @@ namespace MvcProject.Controllers {
                ReturnValue = ReturnValue + "<span class='" + DisableClassName + "'>Previous</span>   ";
             if ((PageNumber - 3) > 1)
                ReturnValue = ReturnValue + "<a href='" + PageUrl.Trim () + "' class='" + ClassName + "'>1</a> ..... | ";
+          
             for (int i = PageNumber - 3; i <= PageNumber; i++)
                if (i >= 1) {
                   if (PageNumber != i) {
@@ -44,6 +45,7 @@ namespace MvcProject.Controllers {
                      ReturnValue = ReturnValue + "<span style='font-weight:bold;'>" + i + "</span> | ";
                   }
                }
+            
             for (int i = PageNumber + 1; i <= PageNumber + 3; i++)
                if (i <= TotalPages) {
                   if (PageNumber != i) {
@@ -57,6 +59,7 @@ namespace MvcProject.Controllers {
                      ReturnValue = ReturnValue + "<span style='font-weight:bold;'>" + i + "</span> | ";
                   }
                }
+
             if ((PageNumber + 3) < TotalPages) {
                ReturnValue = ReturnValue + "..... <a href='" + PageUrl.Trim ();
                if (PageUrl.Contains ("?"))
@@ -65,6 +68,7 @@ namespace MvcProject.Controllers {
                   ReturnValue = ReturnValue + "?";
                ReturnValue = ReturnValue + "pn=" + TotalPages.ToString () + "' class='" + ClassName + "'>" + TotalPages.ToString () + "</a>";
             }
+            
             if (PageNumber < TotalPages) {
                ReturnValue = ReturnValue + "   <a href='" + PageUrl.Trim ();
                if (PageUrl.Contains ("?"))
